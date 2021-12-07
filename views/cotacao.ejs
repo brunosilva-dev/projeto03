@@ -1,0 +1,27 @@
+<%- include('header') %>
+<div class="result">
+  <% if(error) { %> <%= error %> <% } else { %>
+  <span class="dolar">
+    $ <%= qtdDol %> Dólares na cotação <%= cotDol %> é igual a: R$ <%=
+    conversao1 %>
+  </span>
+  <br />
+  <span class="euro">
+    € <%= qtdEur %> Euro na cotação <%= cotEur %> é igual a: R$ <%= conversao2
+    %>
+  </span>
+  <br />
+
+  <span class="bitcoin">
+    ₿ <%= qtdBit %> Bitcoin na cotação <%= cotBit %> é igual a: R$ <%=
+    conversao3 %>
+  </span>
+  <br />
+  <span class="ethereum">
+    Ξ <%= qtdEth %> Ethereum na cotação <%= cotEth %> é igual a: R$ <%=
+    conversao4 %>
+  </span>
+  <br />
+  <% } %>
+</div>
+<%- include('footer') %>
